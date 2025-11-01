@@ -1,0 +1,484 @@
+[13-Jul-2025 23:58:12 Asia/Colombo] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/anrjyawlcb/dcspos.store/admin/order-summery-code.php on line 5
+[13-Jul-2025 23:58:33 Asia/Colombo] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/anrjyawlcb/dcspos.store/admin/order-summery-code.php on line 5
+[14-Jul-2025 00:01:16 Asia/Colombo] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/anrjyawlcb/dcspos.store/admin/order-summery-code.php on line 5
+[14-Jul-2025 00:01:33 Asia/Colombo] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/anrjyawlcb/dcspos.store/admin/order-summery-code.php on line 5
+[14-Jul-2025 00:01:59 Asia/Colombo] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/anrjyawlcb/dcspos.store/admin/order-summery-code.php on line 5
+[14-Jul-2025 00:04:10 Asia/Colombo] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/anrjyawlcb/dcspos.store/admin/order-summery-code.php on line 5
+[14-Jul-2025 00:04:17 Asia/Colombo] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/anrjyawlcb/dcspos.store/admin/order-summery-code.php on line 5
+[14-Jul-2025 13:26:17 Asia/Colombo] PHP Warning:  Undefined variable $paramValue in /home/anrjyawlcb/dcspos.store/admin/code.php on line 188
+[14-Jul-2025 16:28:04 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM188' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[14-Jul-2025 16:30:01 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM188' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[14-Jul-2025 16:31:56 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM188' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[14-Jul-2025 16:36:55 Asia/Colombo] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/anrjyawlcb/dcspos.store/admin/order-summery-code.php on line 5
+[14-Jul-2025 16:43:42 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM188' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[14-Jul-2025 21:21:02 Asia/Colombo] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/anrjyawlcb/dcspos.store/admin/order-summery-code.php on line 5
+[14-Jul-2025 21:21:02 Asia/Colombo] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/anrjyawlcb/dcspos.store/admin/order-summery-code.php on line 5
+[15-Jul-2025 11:34:19 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'XM120' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[15-Jul-2025 11:49:28 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-102' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[15-Jul-2025 13:39:57 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OS - G05L' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[24-Jul-2025 13:19:38 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'HW-Y717' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[24-Jul-2025 14:41:03 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'HW-Y7A' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[24-Jul-2025 14:41:58 Asia/Colombo] PHP Warning:  unlink(../): Is a directory in /home/anrjyawlcb/dcspos.store/admin/products-delete.php on line 20
+[24-Jul-2025 14:42:54 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'HW-Y7A' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[28-Jul-2025 14:02:07 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'SMA22VLV' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[29-Jul-2025 10:34:51 Asia/Colombo] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/anrjyawlcb/dcspos.store/admin/order-summery-code.php on line 5
+[03-Aug-2025 14:54:26 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'IPLT12PM' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[03-Aug-2025 17:06:43 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'IPXSSLC' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[05-Aug-2025 08:50:52 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'sma31normal' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[06-Aug-2025 10:12:22 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'SMA2CMM' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[23-Aug-2025 13:08:35 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-J710' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[23-Aug-2025 13:08:46 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-J710' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[23-Aug-2025 13:08:55 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-J710' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[23-Aug-2025 13:23:45 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-BLP601' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[23-Aug-2025 16:28:35 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-BLP673' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[23-Aug-2025 18:07:56 Asia/Colombo] PHP Warning:  Undefined array key "sub_category_id" in /home/anrjyawlcb/dcspos.store/admin/code.php on line 223
+[23-Aug-2025 18:07:56 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-B-G7' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[23-Aug-2025 18:16:01 Asia/Colombo] PHP Warning:  unlink(../): Is a directory in /home/anrjyawlcb/dcspos.store/admin/products-delete.php on line 20
+[23-Aug-2025 18:16:17 Asia/Colombo] PHP Warning:  unlink(../): Is a directory in /home/anrjyawlcb/dcspos.store/admin/products-delete.php on line 20
+[23-Aug-2025 18:16:33 Asia/Colombo] PHP Warning:  unlink(../): Is a directory in /home/anrjyawlcb/dcspos.store/admin/products-delete.php on line 20
+[23-Aug-2025 18:16:40 Asia/Colombo] PHP Warning:  unlink(../): Is a directory in /home/anrjyawlcb/dcspos.store/admin/products-delete.php on line 20
+[23-Aug-2025 18:16:46 Asia/Colombo] PHP Warning:  unlink(../): Is a directory in /home/anrjyawlcb/dcspos.store/admin/products-delete.php on line 20
+[23-Aug-2025 18:16:54 Asia/Colombo] PHP Warning:  unlink(../): Is a directory in /home/anrjyawlcb/dcspos.store/admin/products-delete.php on line 20
+[23-Aug-2025 18:17:04 Asia/Colombo] PHP Warning:  unlink(../): Is a directory in /home/anrjyawlcb/dcspos.store/admin/products-delete.php on line 20
+[24-Aug-2025 14:05:43 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-A12' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[24-Aug-2025 15:07:29 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-A02S' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[24-Aug-2025 15:08:08 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-A02S' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[24-Aug-2025 15:10:11 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-A02S' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[24-Aug-2025 15:12:10 Asia/Colombo] PHP Warning:  unlink(../): Is a directory in /home/anrjyawlcb/dcspos.store/admin/products-delete.php on line 20
+[24-Aug-2025 17:42:52 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-Y9 2019' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[24-Aug-2025 17:46:53 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-Y9 2019' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[25-Aug-2025 10:38:58 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-Y6P 2020' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[25-Aug-2025 11:50:57 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'SMA34-TP' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[25-Aug-2025 12:01:24 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'SMA32-TP' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[25-Aug-2025 14:58:39 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'SMS24-TP' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[25-Aug-2025 17:54:12 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'RMNT13-TP' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[29-Aug-2025 08:54:58 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'RMNOTE9-TP' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[29-Aug-2025 10:15:33 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'VV-Y51-TP' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[07-Sep-2025 21:02:42 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'LDC 910' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[07-Sep-2025 21:56:52 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-Y9P' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[07-Sep-2025 22:04:12 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-58BX' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[07-Sep-2025 22:29:17 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-NOTE4' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[07-Sep-2025 22:48:24 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'BL-L5J' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[07-Sep-2025 23:00:50 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM-HE341' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[07-Sep-2025 23:45:24 Asia/Colombo] PHP Warning:  unlink(../): Is a directory in /home/anrjyawlcb/dcspos.store/admin/products-delete.php on line 20
+[07-Sep-2025 23:54:56 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'XO-S6' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[08-Sep-2025 02:06:27 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'om-716' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:108
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(108): mysqli_query()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(338): update()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 108
+[08-Sep-2025 02:07:04 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'om-716' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:108
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(108): mysqli_query()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(338): update()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 108
+[08-Sep-2025 14:32:55 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'QB300' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[08-Sep-2025 14:46:26 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'QB300' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[08-Sep-2025 14:46:56 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'QB300' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[08-Sep-2025 17:01:14 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'USB-C-CH20' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[08-Sep-2025 17:02:17 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'USB-C-CH20' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[08-Sep-2025 17:27:43 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'xo-ep37-w' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[08-Sep-2025 17:58:42 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'om-102' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:108
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(108): mysqli_query()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(338): update()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 108
+[08-Sep-2025 18:12:13 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '5cbs' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[08-Sep-2025 18:12:22 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '5cbs' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[08-Sep-2025 18:14:03 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '5cbs' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[08-Sep-2025 19:17:30 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'xo-s' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[08-Sep-2025 20:09:13 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'xm350' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[08-Sep-2025 20:09:48 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'xm350' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[08-Sep-2025 22:38:49 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'jr-t013' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[08-Sep-2025 23:33:23 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'hz-059' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[09-Sep-2025 15:46:18 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'nk-105-2017' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[09-Sep-2025 19:15:36 Asia/Colombo] PHP Warning:  Undefined variable $paramValue in /home/anrjyawlcb/dcspos.store/admin/code.php on line 188
+[09-Sep-2025 19:16:12 Asia/Colombo] PHP Warning:  Undefined variable $paramValue in /home/anrjyawlcb/dcspos.store/admin/code.php on line 188
+[10-Sep-2025 15:36:36 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'cb-4' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[10-Sep-2025 16:15:45 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'om-109' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[10-Sep-2025 16:15:45 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'om-109' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[10-Sep-2025 16:15:45 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'om-109' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[10-Sep-2025 16:15:45 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'om-109' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[10-Sep-2025 20:16:26 Asia/Colombo] PHP Warning:  unlink(../): Is a directory in /home/anrjyawlcb/dcspos.store/admin/products-delete.php on line 20
+[10-Sep-2025 22:26:24 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'S24U-TP' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[11-Sep-2025 11:09:24 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'ip-xtp' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[11-Sep-2025 11:09:25 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'ip-xtp' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[11-Sep-2025 11:38:35 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'IP11PSLC' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[11-Sep-2025 22:12:30 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'IP-XTB' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[11-Sep-2025 22:19:46 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'IP-7VLV' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[12-Sep-2025 13:28:53 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'SMA31-TP' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[12-Sep-2025 13:56:33 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'HOT50IPCH' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[17-Sep-2025 22:31:05 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'om-409-l' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[17-Sep-2025 22:42:48 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'Ip-5s' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[17-Sep-2025 22:44:56 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'Ip-5s' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[18-Sep-2025 00:41:17 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'Ip-8p' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:70
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(70): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(276): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
+[19-Sep-2025 07:29:34 Asia/Colombo] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/anrjyawlcb/dcspos.store/admin/order-summery-code.php on line 5
+[30-Sep-2025 11:29:29 Asia/Colombo] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/anrjyawlcb/dcspos.store/admin/order-summery-code.php on line 5

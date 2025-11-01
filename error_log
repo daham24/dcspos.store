@@ -1,0 +1,88 @@
+[13-Jul-2025 14:28:33 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/anrjyawlcb/dcspos.store/config/dbCon.php:10
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/dbCon.php(10): mysqli->__construct()
+#1 /home/anrjyawlcb/dcspos.store/config/function.php(4): require('/home/anrjyawlc...')
+#2 /home/anrjyawlcb/dcspos.store/includes/header.php(2): require('/home/anrjyawlc...')
+#3 /home/anrjyawlcb/dcspos.store/index.php(1): include('/home/anrjyawlc...')
+#4 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/dbCon.php on line 10
+[13-Jul-2025 14:28:46 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/anrjyawlcb/dcspos.store/config/dbCon.php:10
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/dbCon.php(10): mysqli->__construct()
+#1 /home/anrjyawlcb/dcspos.store/config/function.php(4): require('/home/anrjyawlc...')
+#2 /home/anrjyawlcb/dcspos.store/includes/header.php(2): require('/home/anrjyawlc...')
+#3 /home/anrjyawlcb/dcspos.store/index.php(1): include('/home/anrjyawlc...')
+#4 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/dbCon.php on line 10
+[13-Jul-2025 14:29:02 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/anrjyawlcb/dcspos.store/config/dbCon.php:10
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/dbCon.php(10): mysqli->__construct()
+#1 /home/anrjyawlcb/dcspos.store/config/function.php(4): require('/home/anrjyawlc...')
+#2 /home/anrjyawlcb/dcspos.store/includes/header.php(2): require('/home/anrjyawlc...')
+#3 /home/anrjyawlcb/dcspos.store/index.php(1): include('/home/anrjyawlc...')
+#4 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/dbCon.php on line 10
+[13-Jul-2025 14:29:52 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/anrjyawlcb/dcspos.store/config/dbCon.php:10
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/dbCon.php(10): mysqli->__construct()
+#1 /home/anrjyawlcb/dcspos.store/config/function.php(4): require('/home/anrjyawlc...')
+#2 /home/anrjyawlcb/dcspos.store/includes/header.php(2): require('/home/anrjyawlc...')
+#3 /home/anrjyawlcb/dcspos.store/index.php(1): include('/home/anrjyawlc...')
+#4 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/dbCon.php on line 10
+[13-Jul-2025 14:34:43 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/anrjyawlcb/dcspos.store/config/dbCon.php:10
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/dbCon.php(10): mysqli->__construct()
+#1 /home/anrjyawlcb/dcspos.store/config/function.php(4): require('/home/anrjyawlc...')
+#2 /home/anrjyawlcb/dcspos.store/includes/header.php(2): require('/home/anrjyawlc...')
+#3 /home/anrjyawlcb/dcspos.store/index.php(1): include('/home/anrjyawlc...')
+#4 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/dbCon.php on line 10
+[13-Jul-2025 14:34:44 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/anrjyawlcb/dcspos.store/config/dbCon.php:10
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/dbCon.php(10): mysqli->__construct()
+#1 /home/anrjyawlcb/dcspos.store/config/function.php(4): require('/home/anrjyawlc...')
+#2 /home/anrjyawlcb/dcspos.store/includes/header.php(2): require('/home/anrjyawlc...')
+#3 /home/anrjyawlcb/dcspos.store/index.php(1): include('/home/anrjyawlc...')
+#4 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/dbCon.php on line 10
+[13-Jul-2025 14:46:13 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/anrjyawlcb/dcspos.store/config/dbCon.php:10
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/dbCon.php(10): mysqli->__construct()
+#1 /home/anrjyawlcb/dcspos.store/config/function.php(4): require('/home/anrjyawlc...')
+#2 /home/anrjyawlcb/dcspos.store/includes/header.php(2): require('/home/anrjyawlc...')
+#3 /home/anrjyawlcb/dcspos.store/index.php(1): include('/home/anrjyawlc...')
+#4 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/dbCon.php on line 10
+[13-Jul-2025 14:46:28 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in /home/anrjyawlcb/dcspos.store/config/dbCon.php:10
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/dbCon.php(10): mysqli->__construct()
+#1 /home/anrjyawlcb/dcspos.store/config/function.php(4): require('/home/anrjyawlc...')
+#2 /home/anrjyawlcb/dcspos.store/includes/header.php(2): require('/home/anrjyawlc...')
+#3 /home/anrjyawlcb/dcspos.store/index.php(1): include('/home/anrjyawlc...')
+#4 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/dbCon.php on line 10
+[13-Jul-2025 14:58:34 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'anrjyawlcb_daham'@'localhost' to database 'anrjyawlcb_dcs_pos_system' in /home/anrjyawlcb/dcspos.store/config/dbCon.php:10
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/dbCon.php(10): mysqli->__construct()
+#1 /home/anrjyawlcb/dcspos.store/config/function.php(4): require('/home/anrjyawlc...')
+#2 /home/anrjyawlcb/dcspos.store/includes/header.php(2): require('/home/anrjyawlc...')
+#3 /home/anrjyawlcb/dcspos.store/index.php(1): include('/home/anrjyawlc...')
+#4 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/dbCon.php on line 10
+[13-Jul-2025 14:58:47 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'anrjyawlcb_daham'@'localhost' to database 'anrjyawlcb_dcs_pos_system' in /home/anrjyawlcb/dcspos.store/config/dbCon.php:10
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/dbCon.php(10): mysqli->__construct()
+#1 /home/anrjyawlcb/dcspos.store/config/function.php(4): require('/home/anrjyawlc...')
+#2 /home/anrjyawlcb/dcspos.store/includes/header.php(2): require('/home/anrjyawlc...')
+#3 /home/anrjyawlcb/dcspos.store/index.php(1): include('/home/anrjyawlc...')
+#4 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/dbCon.php on line 10
+[13-Jul-2025 14:58:47 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'anrjyawlcb_daham'@'localhost' to database 'anrjyawlcb_dcs_pos_system' in /home/anrjyawlcb/dcspos.store/config/dbCon.php:10
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/dbCon.php(10): mysqli->__construct()
+#1 /home/anrjyawlcb/dcspos.store/config/function.php(4): require('/home/anrjyawlc...')
+#2 /home/anrjyawlcb/dcspos.store/includes/header.php(2): require('/home/anrjyawlc...')
+#3 /home/anrjyawlcb/dcspos.store/index.php(1): include('/home/anrjyawlc...')
+#4 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/dbCon.php on line 10
