@@ -60,35 +60,150 @@ $(document).ready(function () {
     });
   }
 
+  // Payment Mode Field Visibility Management
+  $(document).on("change", "#payment_mode", function () {
+    var paymentMode = $(this).val();
+    var referenceField = $("#reference_number_field");
+    var instalmentField = $("#instalment_fields");
+    var defaultCphoneField = $("#default_cphone_field");
+    var instalmentCphoneField = $("#instalment_cphone_field");
+
+    // Hide all special fields first
+    referenceField.hide();
+    instalmentField.hide();
+    instalmentCphoneField.hide();
+    defaultCphoneField.show();
+
+    // Clear values
+    $("#reference_number").val("");
+    $("#down_payment").val("");
+    $("#period_months").val("");
+    $("#instalment_calculation").hide();
+
+    // Copy phone value to instalment field if it exists
+    if ($("#cphone").val()) {
+      $("#cphone_instalment").val($("#cphone").val());
+    }
+
+    // Show relevant fields based on payment mode
+    if (paymentMode === "Online Payment") {
+      referenceField.show();
+    } else if (paymentMode === "Instalment") {
+      instalmentField.show();
+      instalmentCphoneField.show();
+      defaultCphoneField.hide();
+
+      // Copy phone value from default to instalment field
+      if ($("#cphone").val()) {
+        $("#cphone_instalment").val($("#cphone").val());
+      }
+    }
+  });
+
+  // Sync phone values between fields
+  $(document).on("input", "#cphone", function () {
+    $("#cphone_instalment").val($(this).val());
+  });
+
+  $(document).on("input", "#cphone_instalment", function () {
+    $("#cphone").val($(this).val());
+  });
+
   // Proceed to place order button click
   $(document).on("click", ".proceedToPlace", function () {
-    var cphone = $("#cphone").val();
     var payment_mode = $("#payment_mode").val();
+    var cphone = $("#cphone").val();
+    var reference_number = $("#reference_number").val();
+    var down_payment = $("#down_payment").val();
+    var period_months = $("#period_months").val();
 
+    // Get phone value from appropriate field
+    if (payment_mode === "Instalment") {
+      cphone = $("#cphone_instalment").val();
+    }
+
+    // Validate payment mode
     if (payment_mode == "") {
       Swal.fire({
         title: "Select Payment Mode",
-        text: "Select your payment mode",
+        text: "Please select a payment mode",
         icon: "warning",
         confirmButtonText: "OK",
       });
       return false;
     }
 
-    if (cphone == "" || !$.isNumeric(cphone)) {
+    // Validate phone number
+    if (cphone == "" || !$.isNumeric(cphone) || cphone.length < 9) {
       Swal.fire({
-        title: "Enter Phone Number",
-        text: "Enter a valid phone number",
+        title: "Invalid Phone Number",
+        text: "Please enter a valid phone number",
         icon: "warning",
         confirmButtonText: "OK",
       });
       return false;
     }
 
+    // For online payment, reference number is required
+    if (
+      payment_mode == "Online Payment" &&
+      (!reference_number || reference_number.trim() === "")
+    ) {
+      Swal.fire({
+        title: "Reference Number Required",
+        text: "Reference number is required for online payments",
+        icon: "warning",
+        confirmButtonText: "OK",
+      });
+      return false;
+    }
+
+    // For instalment payment, validate down payment and period
+    if (payment_mode == "Instalment") {
+      if (!down_payment || down_payment <= 0) {
+        Swal.fire({
+          title: "Down Payment Required",
+          text: "Please enter a valid down payment amount",
+          icon: "warning",
+          confirmButtonText: "OK",
+        });
+        return false;
+      }
+
+      if (!period_months || period_months <= 0) {
+        Swal.fire({
+          title: "Period Required",
+          text: "Please enter a valid period in months",
+          icon: "warning",
+          confirmButtonText: "OK",
+        });
+        return false;
+      }
+    }
+
+    proceedWithOrder(
+      payment_mode,
+      cphone,
+      reference_number,
+      down_payment,
+      period_months
+    );
+  });
+
+  function proceedWithOrder(
+    payment_mode,
+    cphone,
+    reference_number,
+    down_payment,
+    period_months
+  ) {
     var data = {
       proceedToPlaceBtn: true,
       cphone: cphone,
       payment_mode: payment_mode,
+      reference_number: reference_number,
+      down_payment: down_payment,
+      period_months: period_months,
     };
 
     $.ajax({
@@ -101,7 +216,7 @@ $(document).ready(function () {
           window.location.href = "order-summery.php";
         } else if (res.status == 404) {
           Swal.fire({
-            title: res.message,
+            title: "Customer Not Found",
             text: res.message,
             icon: res.status_type,
             showCancelButton: true,
@@ -111,22 +226,27 @@ $(document).ready(function () {
             if (result.isConfirmed) {
               $("#c_phone").val(cphone);
               $("#addCustomerModal").modal("show");
-            } else {
-              // Handle cancel
-              $("#addCustomerModal").modal("hide");
             }
           });
         } else {
           Swal.fire({
-            title: res.message,
+            title: "Error",
             text: res.message,
             icon: res.status_type,
             confirmButtonText: "OK",
           });
         }
       },
+      error: function () {
+        Swal.fire({
+          title: "Error",
+          text: "Failed to process request",
+          icon: "error",
+          confirmButtonText: "OK",
+        });
+      },
     });
-  });
+  }
 
   // Save customer button click
   $(document).on("click", ".saveCustomer", function () {
@@ -150,55 +270,154 @@ $(document).ready(function () {
           success: function (response) {
             var res = JSON.parse(response);
             if (res.status == 200) {
-              swal("Success", "Customer added successfully!", "success").then(
-                () => {
-                  $("#addCustomerModal").modal("hide"); // Close modal after saving
+              Swal.fire({
+                title: "Success",
+                text: res.message,
+                icon: "success",
+                confirmButtonText: "OK",
+              }).then((result) => {
+                if (result.isConfirmed) {
+                  $("#addCustomerModal").modal("hide");
+                  // After saving customer, proceed to order summary
+                  window.location.href = "order-summery.php";
                 }
-              );
+              });
             } else if (res.status == 422) {
-              swal(res.message, res.message, "error");
+              Swal.fire({
+                title: "Warning",
+                text: res.message,
+                icon: "warning",
+                confirmButtonText: "OK",
+              });
             } else {
-              swal(res.message, res.message, "error");
+              Swal.fire({
+                title: "Error",
+                text: res.message,
+                icon: "error",
+                confirmButtonText: "OK",
+              });
             }
+          },
+          error: function () {
+            Swal.fire({
+              title: "Error",
+              text: "Failed to save customer",
+              icon: "error",
+              confirmButtonText: "OK",
+            });
           },
         });
       } else {
-        swal("Enter valid number", "", "warning");
+        Swal.fire({
+          title: "Warning",
+          text: "Please enter a valid phone number",
+          icon: "warning",
+          confirmButtonText: "OK",
+        });
       }
     } else {
-      swal("Please fill required fields", "", "warning");
+      Swal.fire({
+        title: "Warning",
+        text: "Please fill all required fields",
+        icon: "warning",
+        confirmButtonText: "OK",
+      });
     }
   });
 
+  // Save Order button click
   $(document).on("click", "#saveOrder", function () {
-    console.log("Save Order button clicked"); // Debugging
+    console.log("Save Order button clicked");
+
+    Swal.fire({
+      title: "Confirm Order",
+      text: "Are you sure you want to place this order?",
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonText: "Yes, Place Order",
+      cancelButtonText: "Cancel",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        placeOrder();
+      }
+    });
+  });
+
+  function placeOrder() {
     $.ajax({
       type: "POST",
       url: "orders-code.php",
       data: { saveOrder: true },
       success: function (response) {
-        console.log("Response received: ", response); // Debugging
+        console.log("Response received: ", response);
         try {
           var res = JSON.parse(response);
-          console.log("Parsed response: ", res); // Debugging
+          console.log("Parsed response: ", res);
 
           if (res.status == 200) {
-            swal("Success", "Order placed successfully!", "success");
+            // Set a flag to indicate successful order placement
+            sessionStorage.setItem("orderPlaced", "true");
+
             $("#orderPlaceSuccessMessage").text(res.message);
             $("#orderSuccessModal").modal("show");
+
+            // Update the page to show success state
+            $("#saveOrder").prop("disabled", true).text("Order Placed");
+            $(".btn-info, .btn-warning").prop("disabled", true);
           } else {
-            swal("Error", res.message, res.status_type || "error");
+            Swal.fire({
+              title: "Error",
+              text: res.message,
+              icon: res.status_type || "error",
+              confirmButtonText: "OK",
+            });
           }
         } catch (e) {
-          console.error("Error parsing response: ", e); // Debugging
-          swal("Error", "Invalid response from server!", "error");
+          console.error("Error parsing response: ", e);
+          Swal.fire({
+            title: "Error",
+            text: "Invalid response from server!",
+            icon: "error",
+            confirmButtonText: "OK",
+          });
         }
       },
       error: function (xhr, status, error) {
-        console.error("AJAX error: ", error); // Debugging
-        swal("Error", "Failed to connect to server!", "error");
+        console.error("AJAX error: ", error);
+        Swal.fire({
+          title: "Error",
+          text: "Failed to connect to server!",
+          icon: "error",
+          confirmButtonText: "OK",
+        });
       },
     });
+  }
+
+  // Handle modal close - redirect to orders page
+  $("#orderSuccessModal").on("hidden.bs.modal", function () {
+    window.location.href = "orders.php";
+  });
+
+  // Check if order was just placed when page loads
+  if (sessionStorage.getItem("orderPlaced") === "true") {
+    sessionStorage.removeItem("orderPlaced");
+    // Disable the save order button if order was already placed
+    $("#saveOrder").prop("disabled", true).text("Order Placed");
+    $(".btn-info, .btn-warning").prop("disabled", true);
+  }
+
+  // Initialize payment mode fields on page load
+  $(document).ready(function () {
+    // Set initial state
+    var initialPaymentMode = $("#payment_mode").val();
+    if (initialPaymentMode === "Online Payment") {
+      $("#reference_number_field").show();
+    } else if (initialPaymentMode === "Instalment") {
+      $("#instalment_fields").show();
+      $("#instalment_cphone_field").show();
+      $("#default_cphone_field").hide();
+    }
   });
 });
 
@@ -213,18 +432,39 @@ function printMyBillingArea() {
   a.print();
 }
 
-window.jsPDF = window.jspdf.jsPDF;
-var docPDF = new jsPDF();
-
+// PDF download function
 function downloadPDF(invoiceNo) {
-  var elementHTML = document.querySelector("#myBillingArea");
-  docPDF.html(elementHTML, {
-    callback: function () {
-      docPDF.save(invoiceNo + ".pdf");
-    },
-    x: 15,
-    y: 15,
-    width: 170,
-    windowWidth: 650,
-  });
+  // Check if jsPDF is available
+  if (typeof jsPDF === "undefined") {
+    Swal.fire({
+      title: "Error",
+      text: "PDF library not loaded. Please try again.",
+      icon: "error",
+      confirmButtonText: "OK",
+    });
+    return;
+  }
+
+  try {
+    const doc = new jsPDF();
+    const element = document.getElementById("myBillingArea");
+
+    doc.html(element, {
+      callback: function (doc) {
+        doc.save((invoiceNo || "invoice") + ".pdf");
+      },
+      x: 10,
+      y: 10,
+      width: 190,
+      windowWidth: 650,
+    });
+  } catch (error) {
+    console.error("PDF generation error:", error);
+    Swal.fire({
+      title: "Error",
+      text: "Failed to generate PDF. Please try printing instead.",
+      icon: "error",
+      confirmButtonText: "OK",
+    });
+  }
 }

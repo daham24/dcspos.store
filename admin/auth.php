@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 if (isset($_SESSION['loggedIn'])) {
 
@@ -43,7 +43,8 @@ if (isset($_SESSION['loggedIn'])) {
             'bank-deposits.php',
             'utility-bills.php',
             'return-items.php',
-            'return-items-view.php'
+            'return-items-view.php',
+            'update-payment-status.php'
         ];
 
         // Access control logic
@@ -60,9 +61,6 @@ if (isset($_SESSION['loggedIn'])) {
             die('Access Denied: You do not have permission to access this page.');
         }
     }
-
 } else {
     redirect('../login.php', 'Login to continue...');
 }
-
-?>

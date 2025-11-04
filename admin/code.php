@@ -1,9 +1,8 @@
-<?php include('../config/function.php');?>
+<?php include('../config/function.php'); ?>
 
 <?php
 
-if(isset($_POST['saveAdmin']))
-{
+if (isset($_POST['saveAdmin'])) {
   $name = validate($_POST['name']);
   $email = validate($_POST['email']);
   $password = validate($_POST['password']);
@@ -11,12 +10,12 @@ if(isset($_POST['saveAdmin']))
   $role = validate($_POST['role']); // New role field
   $is_ban = isset($_POST['is_ban']) == true ? 1 : 0;
 
-  if($name != '' && $email != '' && $password != '' && $role != ''){
+  if ($name != '' && $email != '' && $password != '' && $role != '') {
 
     $emailCheck = mysqli_query($conn, "SELECT * FROM admins WHERE email='$email' ");
 
-    if($emailCheck){
-      if(mysqli_num_rows($emailCheck) > 0){
+    if ($emailCheck) {
+      if (mysqli_num_rows($emailCheck) > 0) {
         redirect('admins-create.php', 'Email Already used by another user. ');
       }
     }
@@ -32,16 +31,14 @@ if(isset($_POST['saveAdmin']))
       'is_ban' => $is_ban
     ];
     $result = insert('admins', $data);
-    if($result){
+    if ($result) {
       redirect('admins.php', 'Admin Created Successfully! ');
-    }else{
+    } else {
       redirect('admins-create.php', 'Something Went Wrong! ');
     }
-
-  }else{
+  } else {
     redirect('admins-create.php', 'Please fill required fields. ');
   }
-
 }
 
 
@@ -67,12 +64,11 @@ if (isset($_POST['updateAdmin'])) {
   $EmailCheckQuery = "SELECT * FROM admins WHERE email = '$email' AND id!= '$adminID'";
   $checkResult = mysqli_query($conn, $EmailCheckQuery);
 
-  if($checkResult){
+  if ($checkResult) {
 
-    if(mysqli_num_rows($checkResult) > 0){
+    if (mysqli_num_rows($checkResult) > 0) {
       redirect('admins-edit.php?id=' . $adminID, 'Email already used by another user');
     }
-
   }
 
   // Hash the password only if a new password is provided
@@ -111,17 +107,17 @@ if (isset($_POST['saveCategory'])) {
 
 
   $data = [
-      'name' => $name,
-      'description' => $description,
-      'status' => $status
+    'name' => $name,
+    'description' => $description,
+    'status' => $status
   ];
 
   $result = insert('categories', $data);
 
   if ($result) {
-      redirect('categories.php', 'Category Created Successfully!');
+    redirect('categories.php', 'Category Created Successfully!');
   } else {
-      redirect('category-create.php', 'Something Went Wrong!');
+    redirect('category-create.php', 'Something Went Wrong!');
   }
 }
 
@@ -133,17 +129,17 @@ if (isset($_POST['updateCategory'])) {
   $status = isset($_POST['status']) ? 1 : 0;
 
   $data = [
-      'name' => $name,
-      'description' => $description,
-      'status' => $status
+    'name' => $name,
+    'description' => $description,
+    'status' => $status
   ];
 
   $result = update('categories', $categoryId, $data);
 
   if ($result) {
-      redirect('categories-edit.php?id=' . $categoryId, 'Category Updated Successfully!');
+    redirect('categories-edit.php?id=' . $categoryId, 'Category Updated Successfully!');
   } else {
-      redirect('categories-edit.php?id=' . $categoryId, 'Something Went Wrong!');
+    redirect('categories-edit.php?id=' . $categoryId, 'Something Went Wrong!');
   }
 }
 
@@ -158,17 +154,17 @@ if (isset($_POST['saveSubCategory'])) {
   }
 
   $data = [
-      'name' => $name,
-      'category_id' => (int)$categoryId, // Ensure category_id is an integer
-      'status' => $status
+    'name' => $name,
+    'category_id' => (int)$categoryId, // Ensure category_id is an integer
+    'status' => $status
   ];
 
   $result = insert('sub_categories', $data);
 
   if ($result) {
-      redirect('categories.php', 'Sub Category Added Successfully!');
+    redirect('categories.php', 'Sub Category Added Successfully!');
   } else {
-      redirect('categories-create.php', 'Something Went Wrong!');
+    redirect('categories-create.php', 'Something Went Wrong!');
   }
 }
 
@@ -178,16 +174,16 @@ if (isset($_POST['updateSubCategory'])) {
   $status = isset($_POST['status']) ? 1 : 0;
 
   $data = [
-      'name' => $name,
-      'status' => $status
+    'name' => $name,
+    'status' => $status
   ];
 
   $result = update('sub_categories', $subCategoryId, $data);
 
   if ($result) {
-      redirect('categories.php?id=' . $paramValue, 'Sub Category Updated Successfully!');
+    redirect('categories.php?id=' . $paramValue, 'Sub Category Updated Successfully!');
   } else {
-      redirect('categories-edit.php?id=' . $paramValue, 'Something Went Wrong!');
+    redirect('categories-edit.php?id=' . $paramValue, 'Something Went Wrong!');
   }
 }
 
@@ -217,8 +213,7 @@ if (isset($_POST['deleteSubCategory'])) {
   }
 }
 
-if(isset($_POST['saveProduct']))
-{
+if (isset($_POST['saveProduct'])) {
   $category_id = validate($_POST['category_id']);
   $sub_category_id = validate($_POST['sub_category_id']);
   $name = validate($_POST['name']);
@@ -230,30 +225,28 @@ if(isset($_POST['saveProduct']))
   if (!isset($_POST['barcode']) || empty($_POST['barcode'])) {
     $barcode = null; // Set to null if no barcode is provided
   } else {
-      $barcode = validate($_POST['barcode']);
+    $barcode = validate($_POST['barcode']);
   }
 
   if (!isset($_POST['imei_code']) || empty($_POST['imei_code'])) {
-    $imei_code = null; 
+    $imei_code = null;
   } else {
-      $imei_code = validate($_POST['imei_code']);
+    $imei_code = validate($_POST['imei_code']);
   }
-  
-  $discount = isset($_POST['discount']) ? validate($_POST['discount']) : 0; 
-  $warranty_period = isset($_POST['warranty_period']) ? validate($_POST['warranty_period']) : 0; 
+
+  $discount = isset($_POST['discount']) ? validate($_POST['discount']) : 0;
+  $warranty_period = isset($_POST['warranty_period']) ? validate($_POST['warranty_period']) : 0;
   $status = isset($_POST['status']) == true ? 1 : 0;
 
-  if($_FILES['image']['size'] > 0)
-  {
+  if ($_FILES['image']['size'] > 0) {
     $path = "../assets/uploads/products";
     $image_ext = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
 
-    $filename = time().'.'.$image_ext;
+    $filename = time() . '.' . $image_ext;
 
-    move_uploaded_file($_FILES['image']['tmp_name'], $path."/".$filename);
-    $finalImage = "assets/uploads/products/".$filename;
-
-  }else{
+    move_uploaded_file($_FILES['image']['tmp_name'], $path . "/" . $filename);
+    $finalImage = "assets/uploads/products/" . $filename;
+  } else {
     $finalImage = '';
   }
 
@@ -275,18 +268,17 @@ if(isset($_POST['saveProduct']))
 
   $result = insert('products', $data);
 
-  if($result){
+  if ($result) {
     redirect('products.php', 'Product Created Successfully! ');
-  }else{
+  } else {
     redirect('products-create.php', 'Something Went Wrong! ');
   }
 }
 
-if(isset($_POST['updateProduct']))
-{
+if (isset($_POST['updateProduct'])) {
   $product_id = validate($_POST['product_id']);
   $productData = getById('products', $product_id);
-  if(!$productData){
+  if (!$productData) {
     redirect('products.php', 'No such product found');
   }
 
@@ -296,28 +288,26 @@ if(isset($_POST['updateProduct']))
   $price = validate($_POST['price']);
   $sell_price = validate($_POST['sell_price']);
   $quantity = validate($_POST['quantity']);
-  $barcode = validate($_POST['barcode']); 
+  $barcode = validate($_POST['barcode']);
   $imei_code = validate($_POST['imei_code']);
   $discount = isset($_POST['discount']) ? validate($_POST['discount']) : 0;
-  $warranty_period = isset($_POST['warranty_period']) ? validate($_POST['warranty_period']) : 0;  
+  $warranty_period = isset($_POST['warranty_period']) ? validate($_POST['warranty_period']) : 0;
   $status = isset($_POST['status']) == true ? 1 : 0;
 
-  if($_FILES['image']['size'] > 0)
-  {
+  if ($_FILES['image']['size'] > 0) {
     $path = "../assets/uploads/products";
     $image_ext = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
 
-    $filename = time().'.'.$image_ext;
+    $filename = time() . '.' . $image_ext;
 
-    move_uploaded_file($_FILES['image']['tmp_name'], $path."/".$filename);
-    $finalImage = "assets/uploads/products/".$filename;
+    move_uploaded_file($_FILES['image']['tmp_name'], $path . "/" . $filename);
+    $finalImage = "assets/uploads/products/" . $filename;
 
-    $deleteImage = "../".$productData['data']['image'];
-    if(file_exists($deleteImage)){
+    $deleteImage = "../" . $productData['data']['image'];
+    if (file_exists($deleteImage)) {
       unlink($deleteImage);
     }
-
-  }else{
+  } else {
     $finalImage = $productData['data']['image'];
   }
 
@@ -336,25 +326,23 @@ if(isset($_POST['updateProduct']))
     'status' => $status
   ];
   $result = update('products', $product_id, $data);
-  if($result){
-    redirect('products.php?id='.$product_id, 'Product Updated Successfully! ');
-  }else{
-    redirect('products-edit.php?id='.$product_id, 'Something Went Wrong! ');
+  if ($result) {
+    redirect('products.php?id=' . $product_id, 'Product Updated Successfully! ');
+  } else {
+    redirect('products-edit.php?id=' . $product_id, 'Something Went Wrong! ');
   }
 }
 
-if(isset($_POST['saveCustomer']))
-{
+if (isset($_POST['saveCustomer'])) {
   $name = validate($_POST['name']);
   $email = validate($_POST['email']);
   $phone = validate($_POST['phone']);
-  $status = isset($_POST['status']) ? 1:0;
+  $status = isset($_POST['status']) ? 1 : 0;
 
-  if($name != '')
-  {
+  if ($name != '') {
     $emailCheck = mysqli_query($conn, "SELECT * FROM customers WHERE email='$email' ");
-    if($emailCheck){
-      if(mysqli_num_rows($emailCheck) > 0){
+    if ($emailCheck) {
+      if (mysqli_num_rows($emailCheck) > 0) {
         redirect('customers.php', 'Email already used by another customer.');
       }
     }
@@ -367,38 +355,31 @@ if(isset($_POST['saveCustomer']))
     ];
 
     $result = insert('customers', $data);
-    
-    if($result)
-    {
+
+    if ($result) {
       redirect('customers.php', 'Customer Created Successfully!');
-    }else
-    {
+    } else {
       redirect('customers.php', 'Something Went Wrong.');
     }
-
-
-  }else
-  {
+  } else {
     redirect('customers.php', 'Please fill required fields.');
   }
 }
 
 
-if(isset($_POST['updateCustomer']))
-{
+if (isset($_POST['updateCustomer'])) {
   $customerId = validate($_POST['customerId']);
 
   $name = validate($_POST['name']);
   $email = validate($_POST['email']);
   $phone = validate($_POST['phone']);
-  $status = isset($_POST['status']) ? 1:0;
+  $status = isset($_POST['status']) ? 1 : 0;
 
-  if($name != '')
-  {
+  if ($name != '') {
     $emailCheck = mysqli_query($conn, "SELECT * FROM customers WHERE email='$email' AND id!='$customerId'");
-    if($emailCheck){
-      if(mysqli_num_rows($emailCheck) > 0){
-        redirect('customers-edit.php?id='.$customerId, 'Email already used by another customer.');
+    if ($emailCheck) {
+      if (mysqli_num_rows($emailCheck) > 0) {
+        redirect('customers-edit.php?id=' . $customerId, 'Email already used by another customer.');
       }
     }
 
@@ -410,19 +391,14 @@ if(isset($_POST['updateCustomer']))
     ];
 
     $result = update('customers', $customerId, $data);
-    
-    if($result)
-    {
-      redirect('customers.php?id='.$customerId, 'Customer Updated Successfully!');
-    }else
-    {
-      redirect('customers-edit.php?id='.$customerId, 'Something Went Wrong.');
-    }
 
-  
-  }else
-  {
-    redirect('customers-edit.php?id='.$customerId, 'Please fill required fields.');
+    if ($result) {
+      redirect('customers.php?id=' . $customerId, 'Customer Updated Successfully!');
+    } else {
+      redirect('customers-edit.php?id=' . $customerId, 'Something Went Wrong.');
+    }
+  } else {
+    redirect('customers-edit.php?id=' . $customerId, 'Please fill required fields.');
   }
 }
 
@@ -587,69 +563,73 @@ if (isset($_POST['updateRepair'])) {
 
   // Ensure required fields are not empty
   if ($item_name != '' && $customer_id != '' && $description != '') {
-      // Check if the selected customer exists
-      $customerCheck = mysqli_query($conn, "SELECT * FROM customers WHERE id='$customer_id'");
-      if ($customerCheck) {
-          if (mysqli_num_rows($customerCheck) == 0) {
-              redirect('repairs-edit.php?id=' . $repairId, 'Selected customer does not exist.');
-              return;
-          }
-      } else {
-          redirect('repairs-edit.php?id=' . $repairId, 'Error validating customer.');
-          return;
+    // Check if the selected customer exists
+    $customerCheck = mysqli_query($conn, "SELECT * FROM customers WHERE id='$customer_id'");
+    if ($customerCheck) {
+      if (mysqli_num_rows($customerCheck) == 0) {
+        redirect('repairs-edit.php?id=' . $repairId, 'Selected customer does not exist.');
+        return;
       }
+    } else {
+      redirect('repairs-edit.php?id=' . $repairId, 'Error validating customer.');
+      return;
+    }
 
-      // Prepare data to update
-      $data = [
-          'item_name' => $item_name,
-          'customer_id' => $customer_id,
-          'description' => $description,
-          'physical_condition' => $physical_condition,
-          'received_items' => $received_items,
-          'status' => $status
-      ];
+    // Prepare data to update
+    $data = [
+      'item_name' => $item_name,
+      'customer_id' => $customer_id,
+      'description' => $description,
+      'physical_condition' => $physical_condition,
+      'received_items' => $received_items,
+      'status' => $status
+    ];
 
-      // Call the update function
-      $result = update('repairs', $repairId, $data);
+    // Call the update function
+    $result = update('repairs', $repairId, $data);
 
-      // Redirect based on result
-      if ($result) {
-          redirect('repairs-edit.php?id=' . $repairId, 'Repair item updated successfully!');
-      } else {
-          redirect('repairs-edit.php?id=' . $repairId, 'Something went wrong.');
-      }
+    // Redirect based on result
+    if ($result) {
+      redirect('repairs-edit.php?id=' . $repairId, 'Repair item updated successfully!');
+    } else {
+      redirect('repairs-edit.php?id=' . $repairId, 'Something went wrong.');
+    }
   } else {
-      redirect('repairs-edit.php?id=' . $repairId, 'Please fill in all required fields.');
+    redirect('repairs-edit.php?id=' . $repairId, 'Please fill in all required fields.');
   }
 }
 
 
 if (isset($_POST['returnItems'])) {
-  // Get the selected items and reason for the return
-  $items = $_POST['items']; // Items is an array of selected items
-  $reason = validate($_POST['reason']); // Reason for the return
+  $items = $_POST['items'];
+  $reason = validate($_POST['reason']);
 
-  // Loop through each selected item
   foreach ($items as $item) {
-      list($order_id, $product_id) = explode('-', $item); // Get order ID and product ID
+    list($order_id, $product_id) = explode('-', $item);
 
-      // Check product stock, if needed
-      // Here you can fetch product data if required
+    // Get the order_item_id from order_items table
+    $get_item_query = "SELECT id FROM order_items WHERE order_id = '$order_id' AND product_id = '$product_id'";
+    $item_result = mysqli_query($conn, $get_item_query);
 
-      // Insert the return information into the 'returns' table
+    if (mysqli_num_rows($item_result) > 0) {
+      $row = mysqli_fetch_assoc($item_result);
+      $order_item_id = $row['id'];
+
+      // Insert with the correct order_item_id
       $query = "INSERT INTO returns (order_item_id, product_id, quantity, return_date, reason, status)
-                VALUES ('$order_id', '$product_id', 1, CURDATE(), '$reason', 'pending')";
+                  VALUES ('$order_item_id', '$product_id', 1, CURDATE(), '$reason', 'pending')";
       $result = mysqli_query($conn, $query);
 
       if (!$result) {
-          echo "Error processing return: " . mysqli_error($conn);
-          exit; // Stop further processing if the query fails
+        echo "Error processing return: " . mysqli_error($conn);
       }
+    } else {
+      echo "Error: Could not find order item for order ID: $order_id and product ID: $product_id";
+    }
   }
 
-  // Return processed successfully, redirect to return-item-view.php
-  header("Location: return-items-view.php"); // Redirect to the return items view page
-  exit; // Stop script execution after redirection
+  header("Location: return-items-view.php");
+  exit;
 }
 
 
@@ -665,11 +645,11 @@ if (isset($_POST['updateReturn'])) {
             WHERE id = '$returnId'";
 
   if (mysqli_query($conn, $query)) {
-      // Redirect back to the returns page or success page
-      header("Location: return-items-view.php");
-      exit;
+    // Redirect back to the returns page or success page
+    header("Location: return-items-view.php");
+    exit;
   } else {
-      echo "Error updating return: " . mysqli_error($conn);
+    echo "Error updating return: " . mysqli_error($conn);
   }
 }
 

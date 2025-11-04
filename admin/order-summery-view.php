@@ -1,4 +1,11 @@
 <?php
+$_SESSION['message'] = "This section is currently under development. Please check back later.";
+$_SESSION['message_type'] = "warning";
+header("Location: index.php");
+exit;
+?>
+
+<?php
 // Include the header and start session
 include('includes/header.php');
 
@@ -143,91 +150,91 @@ include('order-summery-code.php');
 <!-- Include Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-// Weekly Summary Bar Chart
-const weeklyCtx = document.getElementById('weeklyChart').getContext('2d');
-const weeklyChart = new Chart(weeklyCtx, {
-    type: 'bar',
-    data: {
-        labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-        datasets: [{
-            label: 'Sales',
-            data: [
-                <?= ($_SESSION['weekly_sales']['Sunday']['order_sales'] ?? 0) + ($_SESSION['weekly_sales']['Sunday']['repair_sales'] ?? 0) ?>,
-                <?= ($_SESSION['weekly_sales']['Monday']['order_sales'] ?? 0) + ($_SESSION['weekly_sales']['Monday']['repair_sales'] ?? 0) ?>,
-                <?= ($_SESSION['weekly_sales']['Tuesday']['order_sales'] ?? 0) + ($_SESSION['weekly_sales']['Tuesday']['repair_sales'] ?? 0) ?>,
-                <?= ($_SESSION['weekly_sales']['Wednesday']['order_sales'] ?? 0) + ($_SESSION['weekly_sales']['Wednesday']['repair_sales'] ?? 0) ?>,
-                <?= ($_SESSION['weekly_sales']['Thursday']['order_sales'] ?? 0) + ($_SESSION['weekly_sales']['Thursday']['repair_sales'] ?? 0) ?>,
-                <?= ($_SESSION['weekly_sales']['Friday']['order_sales'] ?? 0) + ($_SESSION['weekly_sales']['Friday']['repair_sales'] ?? 0) ?>,
-                <?= ($_SESSION['weekly_sales']['Saturday']['order_sales'] ?? 0) + ($_SESSION['weekly_sales']['Saturday']['repair_sales'] ?? 0) ?>
-            ],
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)',
-            borderWidth: 1
-        }, {
-            label: 'Expenses',
-            data: [
-                <?= ($_SESSION['weekly_expenses']['Sunday']['product_cost'] ?? 0) + ($_SESSION['weekly_expenses']['Sunday']['utility_bills'] ?? 0) + ($_SESSION['weekly_expenses']['Sunday']['bank_deposits'] ?? 0) ?>,
-                <?= ($_SESSION['weekly_expenses']['Monday']['product_cost'] ?? 0) + ($_SESSION['weekly_expenses']['Monday']['utility_bills'] ?? 0) + ($_SESSION['weekly_expenses']['Monday']['bank_deposits'] ?? 0) ?>,
-                <?= ($_SESSION['weekly_expenses']['Tuesday']['product_cost'] ?? 0) + ($_SESSION['weekly_expenses']['Tuesday']['utility_bills'] ?? 0) + ($_SESSION['weekly_expenses']['Tuesday']['bank_deposits'] ?? 0) ?>,
-                <?= ($_SESSION['weekly_expenses']['Wednesday']['product_cost'] ?? 0) + ($_SESSION['weekly_expenses']['Wednesday']['utility_bills'] ?? 0) + ($_SESSION['weekly_expenses']['Wednesday']['bank_deposits'] ?? 0) ?>,
-                <?= ($_SESSION['weekly_expenses']['Thursday']['product_cost'] ?? 0) + ($_SESSION['weekly_expenses']['Thursday']['utility_bills'] ?? 0) + ($_SESSION['weekly_expenses']['Thursday']['bank_deposits'] ?? 0) ?>,
-                <?= ($_SESSION['weekly_expenses']['Friday']['product_cost'] ?? 0) + ($_SESSION['weekly_expenses']['Friday']['utility_bills'] ?? 0) + ($_SESSION['weekly_expenses']['Friday']['bank_deposits'] ?? 0) ?>,
-                <?= ($_SESSION['weekly_expenses']['Saturday']['product_cost'] ?? 0) + ($_SESSION['weekly_expenses']['Saturday']['utility_bills'] ?? 0) + ($_SESSION['weekly_expenses']['Saturday']['bank_deposits'] ?? 0) ?>
-            ],
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgba(255, 99, 132, 1)',
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
+    // Weekly Summary Bar Chart
+    const weeklyCtx = document.getElementById('weeklyChart').getContext('2d');
+    const weeklyChart = new Chart(weeklyCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+            datasets: [{
+                label: 'Sales',
+                data: [
+                    <?= ($_SESSION['weekly_sales']['Sunday']['order_sales'] ?? 0) + ($_SESSION['weekly_sales']['Sunday']['repair_sales'] ?? 0) ?>,
+                    <?= ($_SESSION['weekly_sales']['Monday']['order_sales'] ?? 0) + ($_SESSION['weekly_sales']['Monday']['repair_sales'] ?? 0) ?>,
+                    <?= ($_SESSION['weekly_sales']['Tuesday']['order_sales'] ?? 0) + ($_SESSION['weekly_sales']['Tuesday']['repair_sales'] ?? 0) ?>,
+                    <?= ($_SESSION['weekly_sales']['Wednesday']['order_sales'] ?? 0) + ($_SESSION['weekly_sales']['Wednesday']['repair_sales'] ?? 0) ?>,
+                    <?= ($_SESSION['weekly_sales']['Thursday']['order_sales'] ?? 0) + ($_SESSION['weekly_sales']['Thursday']['repair_sales'] ?? 0) ?>,
+                    <?= ($_SESSION['weekly_sales']['Friday']['order_sales'] ?? 0) + ($_SESSION['weekly_sales']['Friday']['repair_sales'] ?? 0) ?>,
+                    <?= ($_SESSION['weekly_sales']['Saturday']['order_sales'] ?? 0) + ($_SESSION['weekly_sales']['Saturday']['repair_sales'] ?? 0) ?>
+                ],
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }, {
+                label: 'Expenses',
+                data: [
+                    <?= ($_SESSION['weekly_expenses']['Sunday']['product_cost'] ?? 0) + ($_SESSION['weekly_expenses']['Sunday']['utility_bills'] ?? 0) + ($_SESSION['weekly_expenses']['Sunday']['bank_deposits'] ?? 0) ?>,
+                    <?= ($_SESSION['weekly_expenses']['Monday']['product_cost'] ?? 0) + ($_SESSION['weekly_expenses']['Monday']['utility_bills'] ?? 0) + ($_SESSION['weekly_expenses']['Monday']['bank_deposits'] ?? 0) ?>,
+                    <?= ($_SESSION['weekly_expenses']['Tuesday']['product_cost'] ?? 0) + ($_SESSION['weekly_expenses']['Tuesday']['utility_bills'] ?? 0) + ($_SESSION['weekly_expenses']['Tuesday']['bank_deposits'] ?? 0) ?>,
+                    <?= ($_SESSION['weekly_expenses']['Wednesday']['product_cost'] ?? 0) + ($_SESSION['weekly_expenses']['Wednesday']['utility_bills'] ?? 0) + ($_SESSION['weekly_expenses']['Wednesday']['bank_deposits'] ?? 0) ?>,
+                    <?= ($_SESSION['weekly_expenses']['Thursday']['product_cost'] ?? 0) + ($_SESSION['weekly_expenses']['Thursday']['utility_bills'] ?? 0) + ($_SESSION['weekly_expenses']['Thursday']['bank_deposits'] ?? 0) ?>,
+                    <?= ($_SESSION['weekly_expenses']['Friday']['product_cost'] ?? 0) + ($_SESSION['weekly_expenses']['Friday']['utility_bills'] ?? 0) + ($_SESSION['weekly_expenses']['Friday']['bank_deposits'] ?? 0) ?>,
+                    <?= ($_SESSION['weekly_expenses']['Saturday']['product_cost'] ?? 0) + ($_SESSION['weekly_expenses']['Saturday']['utility_bills'] ?? 0) + ($_SESSION['weekly_expenses']['Saturday']['bank_deposits'] ?? 0) ?>
+                ],
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
             }
         }
-    }
-});
+    });
 
-// Monthly Summary Bar Chart
-const monthlyCtx = document.getElementById('monthlyChart').getContext('2d');
-const monthlyChart = new Chart(monthlyCtx, {
-    type: 'bar',
-    data: {
-        labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5'],
-        datasets: [{
-            label: 'Sales',
-            data: [
-                <?= ($_SESSION['monthly_sales'][1]['order_sales'] ?? 0) + ($_SESSION['monthly_sales'][1]['repair_sales'] ?? 0) ?>,
-                <?= ($_SESSION['monthly_sales'][2]['order_sales'] ?? 0) + ($_SESSION['monthly_sales'][2]['repair_sales'] ?? 0) ?>,
-                <?= ($_SESSION['monthly_sales'][3]['order_sales'] ?? 0) + ($_SESSION['monthly_sales'][3]['repair_sales'] ?? 0) ?>,
-                <?= ($_SESSION['monthly_sales'][4]['order_sales'] ?? 0) + ($_SESSION['monthly_sales'][4]['repair_sales'] ?? 0) ?>,
-                <?= ($_SESSION['monthly_sales'][5]['order_sales'] ?? 0) + ($_SESSION['monthly_sales'][5]['repair_sales'] ?? 0) ?>
-            ],
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)',
-            borderWidth: 1
-        }, {
-            label: 'Expenses',
-            data: [
-                <?= ($_SESSION['monthly_expenses'][1]['product_cost'] ?? 0) + ($_SESSION['monthly_expenses'][1]['utility_bills'] ?? 0) + ($_SESSION['monthly_expenses'][1]['bank_deposits'] ?? 0) ?>,
-                <?= ($_SESSION['monthly_expenses'][2]['product_cost'] ?? 0) + ($_SESSION['monthly_expenses'][2]['utility_bills'] ?? 0) + ($_SESSION['monthly_expenses'][2]['bank_deposits'] ?? 0) ?>,
-                <?= ($_SESSION['monthly_expenses'][3]['product_cost'] ?? 0) + ($_SESSION['monthly_expenses'][3]['utility_bills'] ?? 0) + ($_SESSION['monthly_expenses'][3]['bank_deposits'] ?? 0) ?>,
-                <?= ($_SESSION['monthly_expenses'][4]['product_cost'] ?? 0) + ($_SESSION['monthly_expenses'][4]['utility_bills'] ?? 0) + ($_SESSION['monthly_expenses'][4]['bank_deposits'] ?? 0) ?>,
-                <?= ($_SESSION['monthly_expenses'][5]['product_cost'] ?? 0) + ($_SESSION['monthly_expenses'][5]['utility_bills'] ?? 0) + ($_SESSION['monthly_expenses'][5]['bank_deposits'] ?? 0) ?>
-            ],
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgba(255, 99, 132, 1)',
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
+    // Monthly Summary Bar Chart
+    const monthlyCtx = document.getElementById('monthlyChart').getContext('2d');
+    const monthlyChart = new Chart(monthlyCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5'],
+            datasets: [{
+                label: 'Sales',
+                data: [
+                    <?= ($_SESSION['monthly_sales'][1]['order_sales'] ?? 0) + ($_SESSION['monthly_sales'][1]['repair_sales'] ?? 0) ?>,
+                    <?= ($_SESSION['monthly_sales'][2]['order_sales'] ?? 0) + ($_SESSION['monthly_sales'][2]['repair_sales'] ?? 0) ?>,
+                    <?= ($_SESSION['monthly_sales'][3]['order_sales'] ?? 0) + ($_SESSION['monthly_sales'][3]['repair_sales'] ?? 0) ?>,
+                    <?= ($_SESSION['monthly_sales'][4]['order_sales'] ?? 0) + ($_SESSION['monthly_sales'][4]['repair_sales'] ?? 0) ?>,
+                    <?= ($_SESSION['monthly_sales'][5]['order_sales'] ?? 0) + ($_SESSION['monthly_sales'][5]['repair_sales'] ?? 0) ?>
+                ],
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }, {
+                label: 'Expenses',
+                data: [
+                    <?= ($_SESSION['monthly_expenses'][1]['product_cost'] ?? 0) + ($_SESSION['monthly_expenses'][1]['utility_bills'] ?? 0) + ($_SESSION['monthly_expenses'][1]['bank_deposits'] ?? 0) ?>,
+                    <?= ($_SESSION['monthly_expenses'][2]['product_cost'] ?? 0) + ($_SESSION['monthly_expenses'][2]['utility_bills'] ?? 0) + ($_SESSION['monthly_expenses'][2]['bank_deposits'] ?? 0) ?>,
+                    <?= ($_SESSION['monthly_expenses'][3]['product_cost'] ?? 0) + ($_SESSION['monthly_expenses'][3]['utility_bills'] ?? 0) + ($_SESSION['monthly_expenses'][3]['bank_deposits'] ?? 0) ?>,
+                    <?= ($_SESSION['monthly_expenses'][4]['product_cost'] ?? 0) + ($_SESSION['monthly_expenses'][4]['utility_bills'] ?? 0) + ($_SESSION['monthly_expenses'][4]['bank_deposits'] ?? 0) ?>,
+                    <?= ($_SESSION['monthly_expenses'][5]['product_cost'] ?? 0) + ($_SESSION['monthly_expenses'][5]['utility_bills'] ?? 0) + ($_SESSION['monthly_expenses'][5]['bank_deposits'] ?? 0) ?>
+                ],
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
             }
         }
-    }
-});
+    });
 </script>
 
 <?php include('includes/footer.php'); ?>
