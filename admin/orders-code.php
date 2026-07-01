@@ -188,15 +188,20 @@ if (isset($_POST['saveCustomerBtn'])) {
         $checkCustomer = mysqli_query($conn, "SELECT * FROM customers WHERE phone='$phone' LIMIT 1");
 
         if (mysqli_num_rows($checkCustomer) > 0) {
-            // Customer already exists, just use the existing one
-            jsonResponse(200, 'success', 'Customer Created Succesfully!');
+            // Customer already exists
+            jsonResponse(200, 'success', 'Customer already exists');
         } else {
-            // Insert new customer
+            // Insert new customer - only include email if it's not empty
             $data = [
                 'name' => $name,
                 'phone' => $phone,
-                'email' => $email,
             ];
+
+            // Add email only if it's not empty
+            if (!empty($email)) {
+                $data['email'] = $email;
+            }
+
             $result = insert('customers', $data);
 
             if ($result) {

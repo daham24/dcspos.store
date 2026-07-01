@@ -197,17 +197,17 @@ $page = substr($_SERVER['SCRIPT_NAME'], strrpos($_SERVER['SCRIPT_NAME'], "/") + 
                     <!-- Customers -->
                     <div class="nav-item <?= ($page == 'customers-create.php') || ($page == 'customers.php') ? 'active' : ''; ?>">
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCustomers"
-                            <?= $_SESSION['role'] == 'staff' ? 'style="pointer-events: none; opacity: 0.6;"' : ''; ?>>
+                            >
                             <div class="nav-link-icon"><i class="fas fa-users"></i></div>
                             <span class="nav-link-text">Customers</span>
                             <div class="nav-link-arrow"><i class="fas fa-chevron-down"></i></div>
                         </a>
                         <div class="collapse <?= ($page == 'customers-create.php') || ($page == 'customers.php') ? 'show' : ''; ?>" id="collapseCustomers">
                             <div class="submenu">
-                                <a class="submenu-item <?= $page == 'customers-create.php' ? 'active' : ''; ?>" href="customers-create.php" <?= $_SESSION['role'] == 'staff' ? 'style="pointer-events: none; opacity: 0.6;"' : ''; ?>>
+                                <a class="submenu-item <?= $page == 'customers-create.php' ? 'active' : ''; ?>" href="customers-create.php" >
                                     <i class="fas fa-user-plus me-2"></i>Add Customer
                                 </a>
-                                <a class="submenu-item <?= $page == 'customers.php' ? 'active' : ''; ?>" href="customers.php" <?= $_SESSION['role'] == 'staff' ? 'style="pointer-events: none; opacity: 0.6;"' : ''; ?>>
+                                <a class="submenu-item <?= $page == 'customers.php' ? 'active' : ''; ?>" href="customers.php" >
                                     <i class="fas fa-address-book me-2"></i>View Customers
                                 </a>
                             </div>

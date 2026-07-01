@@ -278,24 +278,6 @@
           document.getElementById('phone').focus();
           return;
         }
-
-        // Confirmation dialog
-        e.preventDefault();
-        const roleText = role === 'admin' ? 'Administrator' : 'Staff';
-        Swal.fire({
-          title: 'Create User Account?',
-          html: `You are about to create a new <strong>${roleText}</strong> account for <strong>${name}</strong>.`,
-          icon: 'question',
-          showCancelButton: true,
-          confirmButtonColor: '#28a745',
-          cancelButtonColor: '#6c757d',
-          confirmButtonText: 'Yes, Create Account',
-          cancelButtonText: 'Cancel'
-        }).then((result) => {
-          if (result.isConfirmed) {
-            addAdminForm.submit();
-          }
-        });
       });
     }
   });

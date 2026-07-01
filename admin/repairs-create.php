@@ -1,5 +1,42 @@
 <?php include('includes/header.php'); ?>
 
+
+<!-- Add Customer Modal -->
+<div class="modal fade" id="addCustomerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addCustomerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="addCustomerModalLabel">
+                    <i class="fas fa-user-plus me-2"></i>Add New Customer
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Customer Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="c_name" placeholder="Enter full name" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Phone Number <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="c_phone" placeholder="Enter phone number" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Email Address</label>
+                    <input type="email" class="form-control" id="c_email" placeholder="Enter email (optional)" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                    <i class="fas fa-times me-1"></i>Cancel
+                </button>
+                <button type="button" class="btn btn-primary saveCustomer">
+                    <i class="fas fa-save me-1"></i>Save Customer
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container-fluid px-4">
     <!-- Page Header -->
     <div class="d-flex justify-content-between align-items-center mt-4">
@@ -52,22 +89,26 @@
                         <label class="form-label fw-semibold">
                             Select Customer <span class="text-danger">*</span>
                         </label>
-                        <div class="input-group">
-                            <span class="input-group-text bg-light">
-                                <i class="fas fa-user text-muted"></i>
-                            </span>
-                            <select id="customer_id" name="customer_id" class="form-select" required>
-                                <option value="">-- Select Customer --</option>
+                        <div class="d-flex gap-2">
+                            <select id="customer_id" name="customer_id" class="form-select mySelect2" style="width: 100%;" required>
+                                <option value="">-- Search Customer --</option>
                                 <?php
                                 $customers = getAll('customers');
                                 foreach ($customers as $customer) {
-                                    echo "<option value='{$customer['id']}'>{$customer['name']} - {$customer['phone']}" .
-                                        (!empty($customer['email']) ? " - {$customer['email']}" : "") . "</option>";
+                                    // Store phone in data attribute for custom searching
+                                    echo "<option value='{$customer['id']}' data-phone='{$customer['phone']}'>" .
+                                        "{$customer['name']} - {$customer['phone']}" .
+                                        (!empty($customer['email']) ? " - {$customer['email']}" : "") .
+                                        "</option>";
                                 }
                                 ?>
                             </select>
+                            <button type="button" class="btn btn-outline-primary flex-shrink-0"
+                                data-bs-toggle="modal" data-bs-target="#addCustomerModal" title="Add new customer">
+                                <i class="fas fa-user-plus"></i>
+                            </button>
                         </div>
-                        <div class="form-text">Choose the customer who owns this device</div>
+                        <div class="form-text">Type to search by name, phone, or email</div>
                     </div>
                 </div>
 
@@ -355,5 +396,81 @@
             // This would typically integrate with your existing alert system
             console.log(`${type}: ${message}`);
         }
+    });
+
+
+    // Save Customer from Modal
+    $(document).on('click', '.saveCustomer', function(e) {
+        e.preventDefault();
+
+        var name = $('#c_name').val().trim();
+        var phone = $('#c_phone').val().trim();
+        var email = $('#c_email').val().trim();
+
+        if (!name || !phone) {
+            Swal.fire('Warning', 'Please fill in name and phone', 'warning');
+            return;
+        }
+
+        if (!$.isNumeric(phone) || phone.length < 10) {
+            Swal.fire('Warning', 'Please enter a valid phone number (minimum 10 digits)', 'warning');
+            return;
+        }
+
+        var saveBtn = $(this);
+        var originalText = saveBtn.html();
+        saveBtn.html('<i class="fas fa-spinner fa-spin me-1"></i>Saving...');
+        saveBtn.prop('disabled', true);
+
+        $.ajax({
+            type: 'POST',
+            url: 'repairs-process.php', 
+            data: {
+                saveCustomerBtn: true,
+                name: name,
+                phone: phone,
+                email: email
+            },
+            dataType: 'json',
+            success: function(res) {
+                if (res.status === 200) {
+                    $('#addCustomerModal').modal('hide');
+
+                    // Refresh customer dropdown with error handling
+                    $.ajax({
+                        url: 'get-customers-ajax.php',
+                        method: 'GET',
+                        success: function(data) {
+                            $('#customer_id').html(data);
+                            $('#customer_id').trigger('change');
+                        },
+                        error: function() {
+                            console.error('Failed to refresh customer list');
+
+                            //location.reload();
+                        }
+                    });
+
+                    // Show success message
+                    Swal.fire('Success', res.message, 'success');
+                } else if (res.status === 422) {
+                    Swal.fire('Warning', res.message, 'warning');
+                } else {
+                    Swal.fire('Error', res.message, 'error');
+                }
+            },
+            error: function() {
+                Swal.fire('Error', 'Failed to save customer', 'error');
+            },
+            complete: function() {
+                saveBtn.html(originalText);
+                saveBtn.prop('disabled', false);
+            }
+        });
+    });
+
+    // Reset modal fields when closed
+    $('#addCustomerModal').on('hidden.bs.modal', function() {
+        $('#c_name, #c_phone, #c_email').val('');
     });
 </script>

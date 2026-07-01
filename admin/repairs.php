@@ -193,7 +193,7 @@
                                                 title="View Details">
                                                 <i class="fas fa-eye"></i>
                                             </a>
-                                            <?php if ($_SESSION['role'] == 'admin'): ?>
+                                            <?php if ($_SESSION['role'] == 'admin' || $_SESSION['role'] == 'staff'): ?>
                                                 <a href="repairs-edit.php?id=<?= $repair['id']; ?>"
                                                     class="btn btn-outline-warning"
                                                     title="Edit Repair">

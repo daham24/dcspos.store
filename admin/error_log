@@ -482,3 +482,804 @@ Stack trace:
   thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 70
 [19-Sep-2025 07:29:34 Asia/Colombo] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/anrjyawlcb/dcspos.store/admin/order-summery-code.php on line 5
 [30-Sep-2025 11:29:29 Asia/Colombo] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/anrjyawlcb/dcspos.store/admin/order-summery-code.php on line 5
+[19-Nov-2025 00:00:25 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM401C' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[19-Nov-2025 00:00:34 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM401C' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[19-Nov-2025 00:00:47 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM401C' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[19-Nov-2025 00:00:50 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM401C' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[19-Nov-2025 00:00:57 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM401C' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[19-Nov-2025 00:01:01 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM401C' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[19-Nov-2025 00:02:36 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'OM401L' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[19-Nov-2025 23:46:46 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '3in1C' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[19-Nov-2025 23:47:20 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '3in1C' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[19-Nov-2025 23:47:23 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '3in1C' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[19-Nov-2025 23:49:28 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '3in1C' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[19-Nov-2025 23:49:45 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '3in1C' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[20-Nov-2025 00:03:23 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '3in1c' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[23-Nov-2025 22:05:17 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'sam-A32-5G' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[23-Nov-2025 22:05:41 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'sam-A32-5G' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[23-Nov-2025 22:08:07 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'sam-A32-5G' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[23-Nov-2025 22:11:42 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'sam-A32-5G' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[03-Jan-2026 20:36:05 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'Ip12promax' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[03-Jan-2026 20:36:26 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'Ip12promax' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[03-Jan-2026 20:37:08 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'Ip12promax' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[03-Jan-2026 20:37:52 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'Ip12promaxp' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[03-Jan-2026 20:37:56 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'Ip12promaxp' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[03-Jan-2026 20:39:53 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'Ip12promax' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[03-Jan-2026 20:40:20 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'Ip12promax' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[03-Jan-2026 20:41:02 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'Ip12promaxp' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[03-Jan-2026 20:42:19 Asia/Colombo] PHP Warning:  unlink(../): Is a directory in /home/anrjyawlcb/dcspos.store/admin/products-delete.php on line 20
+[03-Jan-2026 21:00:09 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'MiA12022Pouch' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[03-Jan-2026 21:00:15 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'MiA12022Pouch' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[03-Jan-2026 21:00:18 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'MiA12022Pouch' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[03-Jan-2026 21:25:00 Asia/Colombo] PHP Warning:  unlink(../): Is a directory in /home/anrjyawlcb/dcspos.store/admin/products-delete.php on line 20
+[03-Jan-2026 21:45:10 Asia/Colombo] PHP Warning:  Undefined array key "sub_category_id" in /home/anrjyawlcb/dcspos.store/admin/code.php on line 218
+[03-Jan-2026 21:45:10 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'Infh11ppou' for key 'unique_barcode' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(269): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[03-Jan-2026 22:53:09 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Too many connections in /home/anrjyawlcb/dcspos.store/config/dbCon.php:10
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/dbCon.php(10): mysqli->__construct()
+#1 /home/anrjyawlcb/dcspos.store/config/function.php(4): require('/home/anrjyawlc...')
+#2 /home/anrjyawlcb/dcspos.store/admin/includes/header.php(2): require('/home/anrjyawlc...')
+#3 /home/anrjyawlcb/dcspos.store/admin/products-create.php(1): include('/home/anrjyawlc...')
+#4 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/dbCon.php on line 10
+[11-Jan-2026 16:24:37 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Resource temporarily unavailable in /home/anrjyawlcb/dcspos.store/config/dbCon.php:10
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/dbCon.php(10): mysqli->__construct()
+#1 /home/anrjyawlcb/dcspos.store/config/function.php(4): require('/home/anrjyawlc...')
+#2 /home/anrjyawlcb/dcspos.store/admin/includes/header.php(2): require('/home/anrjyawlc...')
+#3 /home/anrjyawlcb/dcspos.store/admin/order-create.php(1): include('/home/anrjyawlc...')
+#4 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/dbCon.php on line 10
+[11-Jan-2026 17:01:54 Asia/Colombo] === ADD ACCOUNT TRIGGERED ===
+[11-Jan-2026 17:01:54 Asia/Colombo] POST Data: Array
+(
+    [bank_id] => 7
+    [account_number] => 88574651
+    [add_account] => 
+)
+
+[11-Jan-2026 17:01:54 Asia/Colombo] Bank ID: 7, Account Number: 88574651
+[11-Jan-2026 17:01:54 Asia/Colombo] Duplicate Check Query: SELECT id FROM bank_accounts WHERE bank_id = '7' AND account_number = '88574651'
+[11-Jan-2026 17:01:54 Asia/Colombo] Insert Query: INSERT INTO bank_accounts (bank_id, account_number, created_at) VALUES ('7', '88574651', NOW())
+[11-Jan-2026 17:01:54 Asia/Colombo] Success: Account added successfully! ID: 7
+[11-Jan-2026 17:01:54 Asia/Colombo] Redirecting to bank-deposits.php
+[11-Jan-2026 17:02:51 Asia/Colombo] === ADD ACCOUNT TRIGGERED ===
+[11-Jan-2026 17:02:51 Asia/Colombo] POST Data: Array
+(
+    [bank_id] => 8
+    [account_number] => 20016587562
+    [add_account] => 
+)
+
+[11-Jan-2026 17:02:51 Asia/Colombo] Bank ID: 8, Account Number: 20016587562
+[11-Jan-2026 17:02:51 Asia/Colombo] Duplicate Check Query: SELECT id FROM bank_accounts WHERE bank_id = '8' AND account_number = '20016587562'
+[11-Jan-2026 17:02:51 Asia/Colombo] Insert Query: INSERT INTO bank_accounts (bank_id, account_number, created_at) VALUES ('8', '20016587562', NOW())
+[11-Jan-2026 17:02:51 Asia/Colombo] Success: Account added successfully! ID: 8
+[11-Jan-2026 17:02:51 Asia/Colombo] Redirecting to bank-deposits.php
+[12-Jan-2026 18:15:57 Asia/Colombo] === ADD ACCOUNT TRIGGERED ===
+[12-Jan-2026 18:15:57 Asia/Colombo] POST Data: Array
+(
+    [bank_id] => 9
+    [account_number] => 81205702
+    [add_account] => 
+)
+
+[12-Jan-2026 18:15:57 Asia/Colombo] Bank ID: 9, Account Number: 81205702
+[12-Jan-2026 18:15:57 Asia/Colombo] Duplicate Check Query: SELECT id FROM bank_accounts WHERE bank_id = '9' AND account_number = '81205702'
+[12-Jan-2026 18:15:57 Asia/Colombo] Insert Query: INSERT INTO bank_accounts (bank_id, account_number, created_at) VALUES ('9', '81205702', NOW())
+[12-Jan-2026 18:15:57 Asia/Colombo] Success: Account added successfully! ID: 9
+[12-Jan-2026 18:15:57 Asia/Colombo] Redirecting to bank-deposits.php
+[12-Jan-2026 18:15:59 Asia/Colombo] === ADD ACCOUNT TRIGGERED ===
+[12-Jan-2026 18:15:59 Asia/Colombo] POST Data: Array
+(
+    [bank_id] => 9
+    [account_number] => 81205702
+    [add_account] => 
+)
+
+[12-Jan-2026 18:15:59 Asia/Colombo] Bank ID: 9, Account Number: 81205702
+[12-Jan-2026 18:15:59 Asia/Colombo] Duplicate Check Query: SELECT id FROM bank_accounts WHERE bank_id = '9' AND account_number = '81205702'
+[12-Jan-2026 18:15:59 Asia/Colombo] Duplicate Found: Account number already exists for this bank!
+[14-Jan-2026 16:25:44 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:25:44 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:26:06 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:26:07 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:26:37 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:26:37 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:27:35 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:27:35 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:27:38 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:27:38 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:28:09 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:28:09 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:29:57 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:29:57 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:35:13 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:35:13 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:51:26 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:51:26 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:51:32 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 16:51:32 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 17:05:13 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 17:05:13 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 17:05:36 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[14-Jan-2026 17:05:36 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 09:29:59 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '0776324994' for key 'phone' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(362): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 09:29:59 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '0776324994' for key 'phone' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(362): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 09:31:36 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '0776324994' for key 'phone' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(362): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 13:43:19 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 13:43:19 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 13:43:31 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 13:43:31 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 13:44:43 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '0705094670' for key 'phone' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(362): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 16:40:02 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '0719262009' for key 'phone' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(362): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 19:11:09 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '0776324994' for key 'phone' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(362): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 19:11:42 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '0776324994' for key 'phone' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(362): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 19:13:09 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '0776324994' for key 'phone' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(362): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 19:16:30 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 19:16:30 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 19:17:12 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '0762475977' for key 'phone' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(362): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 19:17:22 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '0762475977' for key 'phone' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(362): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 19:19:29 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '0762475977' for key 'phone' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(362): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[15-Jan-2026 19:19:39 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '0762475977' for key 'phone' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(362): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[16-Jan-2026 13:54:59 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[16-Jan-2026 13:54:59 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[17-Jan-2026 15:46:23 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '0775647723' for key 'phone' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/code.php(362): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[19-Jan-2026 18:15:15 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[19-Jan-2026 18:15:15 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[19-Jan-2026 18:15:49 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[19-Jan-2026 18:15:49 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[19-Jan-2026 18:17:45 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[19-Jan-2026 18:17:45 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[22-Jan-2026 18:32:16 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[22-Jan-2026 18:32:16 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/dcspos.store/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/dcspos.store/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/dcspos.store/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/dcspos.store/config/function.php on line 74
+[07-Feb-2026 14:16:54 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[07-Feb-2026 14:16:54 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[07-Feb-2026 14:17:41 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[07-Feb-2026 14:17:41 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[07-Feb-2026 14:17:58 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[07-Feb-2026 14:17:58 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[07-Feb-2026 14:20:28 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[07-Feb-2026 14:20:28 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[07-Feb-2026 14:20:28 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[07-Feb-2026 14:20:28 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[08-Feb-2026 10:21:08 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[08-Feb-2026 10:21:08 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:42 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:43 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:43 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:44 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:44 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:44 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:44 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:45 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:45 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:47 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:47 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:48 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:48 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:48 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:49 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:49 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:49 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:50 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:50 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:52 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:52 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:53 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:53 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:38:54 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:40:31 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:40:31 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:40:32 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74
+[20-Feb-2026 19:40:32 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '' for key 'email' in /home/anrjyawlcb/redvelvet.lk/config/function.php:74
+Stack trace:
+#0 /home/anrjyawlcb/redvelvet.lk/config/function.php(74): mysqli_stmt_execute()
+#1 /home/anrjyawlcb/redvelvet.lk/admin/orders-code.php(200): insert()
+#2 {main}
+  thrown in /home/anrjyawlcb/redvelvet.lk/config/function.php on line 74

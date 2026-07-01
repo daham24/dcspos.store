@@ -17,12 +17,13 @@ function validate($inputData)
 }
 
 //Redirect from one page to another page with the message (status)
-function redirect($url, $status)
+function redirect($url, $message)
 {
-
-  $_SESSION['status'] = $status;
-  header('Location: ' . $url);
-  exit(0);
+  if (!defined('AJAX_REQUEST')) {
+    $_SESSION['message'] = $message;
+    header('Location: ' . $url);
+    exit();
+  }
 }
 
 //Display messages or status after any process.

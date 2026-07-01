@@ -337,19 +337,24 @@ if (isset($_POST['saveCustomer'])) {
   $name = validate($_POST['name']);
   $email = validate($_POST['email']);
   $phone = validate($_POST['phone']);
-  $status = isset($_POST['status']) ? 1 : 0;
+  $status = isset($_POST['email']) ? 1 : 0;
 
   if ($name != '') {
-    $emailCheck = mysqli_query($conn, "SELECT * FROM customers WHERE email='$email' ");
-    if ($emailCheck) {
-      if (mysqli_num_rows($emailCheck) > 0) {
-        redirect('customers.php', 'Email already used by another customer.');
+    if (!empty($email) && $email != '') {
+      $emailCheck = mysqli_query($conn, "SELECT * FROM customers WHERE email='$email'");
+      if ($emailCheck) {
+        if (mysqli_num_rows($emailCheck) > 0) {
+          redirect('customers.php', 'Email already used by another customer.');
+        }
       }
     }
 
+    // If email is empty, set it to NULL in the database
+    $emailValue = (empty($email) || $email == '') ? NULL : $email;
+
     $data = [
       'name' => $name,
-      'email' => $email,
+      'email' => $emailValue,
       'phone' => $phone,
       'status' => $status
     ];

@@ -13,13 +13,13 @@
               <div class="col-md-3">
                 <div class="input-group">
                   <span class="input-group-text bg-light border-end-0">
-                    <i class="fas fa-search text-muted"></i>
+                    <i class="fas fa-phone text-muted"></i>
                   </span>
                   <input type="text"
-                    name="search_tracking"
+                    name="search_phone"
                     class="form-control border-start-0"
-                    placeholder="Tracking No."
-                    value="<?= isset($_GET['search_tracking']) ? htmlspecialchars($_GET['search_tracking']) : ''; ?>" />
+                    placeholder="Customer Phone"
+                    value="<?= isset($_GET['search_phone']) ? htmlspecialchars($_GET['search_phone']) : ''; ?>" />
                 </div>
               </div>
               <div class="col-md-3">
@@ -65,15 +65,15 @@
 
       <?php
       // Get filter values
-      $searchTracking = isset($_GET['search_tracking']) ? validate($_GET['search_tracking']) : '';
+      $searchPhone = isset($_GET['search_phone']) ? validate($_GET['search_phone']) : '';
       $orderDate = isset($_GET['date']) ? validate($_GET['date']) : '';
       $paymentStatus = isset($_GET['payment_status']) ? validate($_GET['payment_status']) : '';
 
       // Build the query with conditions
       $query = "SELECT o.*, c.* FROM orders o, customers c WHERE c.id = o.customer_id";
 
-      if ($searchTracking != '') {
-        $query .= " AND o.tracking_no LIKE '%$searchTracking%'";
+      if ($searchPhone != '') {
+        $query .= " AND c.phone LIKE '%$searchPhone%'";
       }
       if ($orderDate != '') {
         $query .= " AND o.order_date = '$orderDate'";
