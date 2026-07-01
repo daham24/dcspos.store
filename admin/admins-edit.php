@@ -135,6 +135,48 @@
             </div>
           </form>
 
+          <?php if ($adminData['data']['role'] === 'staff') : ?>
+            <?php
+            $qrToken = $adminData['data']['qr_token'] ?? '';
+            if (empty($qrToken)) {
+                $qrToken = generateUniqueQrToken();
+                update('admins', $adminData['data']['id'], ['qr_token' => $qrToken]);
+            }
+            ?>
+            <div class="card mt-4 border-success">
+              <div class="card-header bg-white border-bottom py-3">
+                <h5 class="mb-0 text-dark">
+                  <i class="fas fa-qrcode me-2 text-success"></i>Staff Attendance QR Code
+                </h5>
+              </div>
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <canvas id="staffQrPreview"></canvas>
+                  </div>
+                  <div class="col-md-8">
+                    <p class="text-muted mb-2">This unique QR code is used by the staff member to mark attendance when logging in.</p>
+                    <div class="border rounded p-3 bg-light mb-3">
+                      <small class="text-muted d-block">Staff Code</small>
+                      <code id="staffQrToken"><?= htmlspecialchars($qrToken) ?></code>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2">
+                      <a href="staff-qr-print.php?id=<?= $adminData['data']['id'] ?>" class="btn btn-success" target="_blank">
+                        <i class="fas fa-print me-1"></i>Print QR Card
+                      </a>
+                      <form action="code.php" method="POST" class="d-inline" onsubmit="return confirm('Generate a new QR code? The old card will stop working.');">
+                        <input type="hidden" name="adminId" value="<?= $adminData['data']['id'] ?>">
+                        <button type="submit" name="regenerateQrToken" class="btn btn-outline-warning">
+                          <i class="fas fa-sync me-1"></i>Regenerate QR
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <?php endif; ?>
+
       <?php
         } else {
           echo '<div class="alert alert-danger">' . $adminData['message'] . '</div>';
@@ -324,3 +366,18 @@
     }
   });
 </script>
+
+<?php if (isset($adminData['data']['role']) && $adminData['data']['role'] === 'staff' && !empty($qrToken)) : ?>
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const canvas = document.getElementById('staffQrPreview');
+    if (canvas) {
+        QRCode.toCanvas(canvas, <?= json_encode($qrToken) ?>, {
+            width: 180,
+            margin: 2
+        });
+    }
+});
+</script>
+<?php endif; ?>

@@ -2,7 +2,7 @@
 
 if(isset($_SESSION['loggedIn'])){
     ?>
-    <script>window.location.href = 'index.php';</script>
+    <script>window.location.href = 'admin/index.php';</script>
     <?php
 }
 

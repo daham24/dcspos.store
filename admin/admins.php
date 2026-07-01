@@ -98,6 +98,11 @@
                       <a href="admins-edit.php?id=<?= $adminItem['id'] ?>" class="btn btn-outline-primary btn-sm">
                         <i class="fas fa-edit me-1"></i>Edit
                       </a>
+                      <?php if ($adminItem['role'] === 'staff') : ?>
+                        <a href="staff-qr-print.php?id=<?= $adminItem['id'] ?>" class="btn btn-outline-success btn-sm" target="_blank" title="Print QR Card">
+                          <i class="fas fa-qrcode"></i>
+                        </a>
+                      <?php endif; ?>
                       <a
                         href="admins-delete.php?id=<?= $adminItem['id'] ?>"
                         class="btn btn-outline-danger btn-sm delete-btn"

@@ -175,7 +175,7 @@ $page = substr($_SERVER['SCRIPT_NAME'], strrpos($_SERVER['SCRIPT_NAME'], "/") + 
                     <div class="sidebar-section-header">Manage Users</div>
 
                     <!-- Admins/Staff -->
-                    <div class="nav-item <?= ($page == 'admins-create.php') || ($page == 'admins.php') ? 'active' : ''; ?>">
+                    <div class="nav-item <?= ($page == 'admins-create.php') || ($page == 'admins.php') || ($page == 'admins-edit.php') ? 'active' : ''; ?>">
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseAdmins"
                             <?= $_SESSION['role'] == 'staff' ? 'style="pointer-events: none; opacity: 0.6;"' : ''; ?>>
                             <div class="nav-link-icon"><i class="fas fa-user-shield"></i></div>
@@ -193,6 +193,15 @@ $page = substr($_SERVER['SCRIPT_NAME'], strrpos($_SERVER['SCRIPT_NAME'], "/") + 
                             </div>
                         </div>
                     </div>
+
+                    <a class="nav-link <?= $page == 'attendance.php' ? 'active' : ''; ?>" href="attendance.php"
+                        <?= $_SESSION['role'] == 'staff' ? 'style="pointer-events: none; opacity: 0.6;"' : ''; ?>>
+                        <div class="nav-link-icon"><i class="fas fa-clipboard-check"></i></div>
+                        <span class="nav-link-text">Staff Attendance</span>
+                        <?php if ($page == 'attendance.php'): ?>
+                            <span class="active-indicator"></span>
+                        <?php endif; ?>
+                    </a>
 
                     <!-- Customers -->
                     <div class="nav-item <?= ($page == 'customers-create.php') || ($page == 'customers.php') ? 'active' : ''; ?>">

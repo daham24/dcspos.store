@@ -30,7 +30,13 @@ function redirect($url, $message)
 function alertMessage()
 {
 
-  if (isset($_SESSION['status'])) {
+  if (isset($_SESSION['message'])) {
+    echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <h6>' . $_SESSION['message'] . '</h6>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>';
+    unset($_SESSION['message']);
+  } elseif (isset($_SESSION['status'])) {
 
     echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
       <h6>' . $_SESSION['status'] . '</h6>
@@ -266,4 +272,127 @@ function getByColumn($table, $column, $value)
       'message' => 'Something Went Wrong.'
     ];
   }
+}
+
+function generateUniqueQrToken()
+{
+  global $conn;
+
+  do {
+    $token = 'DCS-STAFF-' . strtoupper(bin2hex(random_bytes(16)));
+    try {
+      $check = mysqli_query($conn, "SELECT id FROM admins WHERE qr_token='$token' LIMIT 1");
+    } catch (Throwable $e) {
+      return $token;
+    }
+  } while ($check && mysqli_num_rows($check) > 0);
+
+  return $token;
+}
+
+function isAttendanceFeatureReady()
+{
+  global $conn;
+
+  try {
+    $qrColumn = mysqli_query($conn, "SHOW COLUMNS FROM admins LIKE 'qr_token'");
+    $attendanceTable = mysqli_query($conn, "SHOW TABLES LIKE 'staff_attendance'");
+
+    return $qrColumn
+      && mysqli_num_rows($qrColumn) > 0
+      && $attendanceTable
+      && mysqli_num_rows($attendanceTable) > 0;
+  } catch (Throwable $e) {
+    return false;
+  }
+}
+
+function ensureStaffQrToken($adminId, $existingToken = null)
+{
+  if (!empty($existingToken)) {
+    return $existingToken;
+  }
+
+  if (!isAttendanceFeatureReady()) {
+    return null;
+  }
+
+  try {
+    $qrToken = generateUniqueQrToken();
+    update('admins', $adminId, ['qr_token' => $qrToken]);
+    return $qrToken;
+  } catch (Throwable $e) {
+    return null;
+  }
+}
+
+function hasMarkedAttendanceToday($adminId)
+{
+  global $conn;
+
+  if (!isAttendanceFeatureReady()) {
+    return false;
+  }
+
+  try {
+    $adminId = validate($adminId);
+    $today = date('Y-m-d');
+    $query = "SELECT id FROM staff_attendance WHERE admin_id='$adminId' AND attendance_date='$today' LIMIT 1";
+    $result = mysqli_query($conn, $query);
+
+    return $result && mysqli_num_rows($result) > 0;
+  } catch (Throwable $e) {
+    return false;
+  }
+}
+
+function markStaffAttendance($adminId, $method = 'qr_scan')
+{
+  global $conn;
+
+  if (!isAttendanceFeatureReady()) {
+    return ['status' => 200, 'message' => 'Attendance feature not configured'];
+  }
+
+  try {
+    $adminId = validate($adminId);
+    $today = date('Y-m-d');
+    $now = date('Y-m-d H:i:s');
+
+    if (hasMarkedAttendanceToday($adminId)) {
+      return ['status' => 200, 'message' => 'Attendance already marked for today'];
+    }
+
+    $data = [
+      'admin_id' => (int) $adminId,
+      'attendance_date' => $today,
+      'check_in_time' => $now,
+      'check_in_method' => $method
+    ];
+
+    $result = insert('staff_attendance', $data);
+
+    if ($result) {
+      return ['status' => 200, 'message' => 'Attendance marked successfully'];
+    }
+  } catch (Throwable $e) {
+    return ['status' => 500, 'message' => 'Failed to mark attendance'];
+  }
+
+  return ['status' => 500, 'message' => 'Failed to mark attendance'];
+}
+
+function completeStaffLogin($userRow)
+{
+  $_SESSION['loggedIn'] = true;
+  $_SESSION['loggedInUser'] = [
+    'user_id' => $userRow['id'],
+    'name' => $userRow['name'],
+    'email' => $userRow['email'],
+    'phone' => $userRow['phone'],
+  ];
+  $_SESSION['role'] = $userRow['role'];
+  $_SESSION['attendance_marked'] = true;
+
+  unset($_SESSION['pendingStaffLogin']);
 }

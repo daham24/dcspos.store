@@ -27,12 +27,21 @@ if (isset($_POST['saveAdmin'])) {
       'email' => $email,
       'password' => $bcrypt_password,
       'phone' => $phone,
-      'role' => $role, // Add role to the data array
+      'role' => $role,
       'is_ban' => $is_ban
     ];
+
+    if ($role === 'staff') {
+      $data['qr_token'] = generateUniqueQrToken();
+    }
+
     $result = insert('admins', $data);
     if ($result) {
-      redirect('admins.php', 'Admin Created Successfully! ');
+      if ($role === 'staff') {
+        redirect('admins.php', 'Staff created successfully! Print their QR card from the edit page.');
+      } else {
+        redirect('admins.php', 'Admin Created Successfully! ');
+      }
     } else {
       redirect('admins-create.php', 'Something Went Wrong! ');
     }
@@ -76,17 +85,19 @@ if (isset($_POST['updateAdmin'])) {
 
   // Check for required fields
   if ($name !== '' && $email !== '' && $role !== '') {
-    // Prepare data for update
     $data = [
       'name' => $name,
       'email' => $email,
       'password' => $hashedPassword,
       'phone' => $phone,
-      'role' => $role, // Include role in the update
+      'role' => $role,
       'is_ban' => $is_ban
     ];
 
-    // Attempt to update the admin record
+    if ($role === 'staff' && empty($adminData['data']['qr_token'])) {
+      $data['qr_token'] = generateUniqueQrToken();
+    }
+
     $result = update('admins', $adminID, $data);
     if ($result) {
       redirect('admins-edit.php?id=' . $adminID, 'Admin Updated Successfully!');
@@ -96,6 +107,29 @@ if (isset($_POST['updateAdmin'])) {
   } else {
     // Redirect with an error if required fields are missing
     redirect('admins-edit.php?id=' . $adminID, 'Please fill in all required fields.');
+  }
+}
+
+
+if (isset($_POST['regenerateQrToken'])) {
+  $adminID = validate($_POST['adminId']);
+  $adminData = getById('admins', $adminID);
+
+  if ($adminData['status'] != 200) {
+    redirect('admins-edit.php?id=' . $adminID, 'Invalid Admin ID.');
+  }
+
+  if ($adminData['data']['role'] !== 'staff') {
+    redirect('admins-edit.php?id=' . $adminID, 'QR codes are only for staff members.');
+  }
+
+  $newToken = generateUniqueQrToken();
+  $result = update('admins', $adminID, ['qr_token' => $newToken]);
+
+  if ($result) {
+    redirect('admins-edit.php?id=' . $adminID, 'New QR code generated successfully!');
+  } else {
+    redirect('admins-edit.php?id=' . $adminID, 'Failed to regenerate QR code.');
   }
 }
 

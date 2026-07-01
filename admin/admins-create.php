@@ -140,7 +140,7 @@
             </div>
             <div>
               <h6 class="mb-1 fw-bold">Staff Role</h6>
-              <p class="text-muted mb-0">Limited access to specific modules and functions</p>
+              <p class="text-muted mb-0">Limited access to specific modules. A unique QR code is auto-generated for attendance at login.</p>
             </div>
           </div>
         </div>
